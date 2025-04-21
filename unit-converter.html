@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter - ToolBox</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/unit-converter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>ToolBox</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="unit-converter.html" class="active">Unit Converter</a></li>
+                <li><a href="todo-list.html">To-Do List</a></li>
+                <li><a href="doc-converter.html">Document Converter</a></li>
+            </ul>
+            <button id="themeToggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Unit Converter</h1>
+        
+        <div class="converter-container">
+            <div class="category-select">
+                <label for="category">Select Category:</label>
+                <select id="category">
+                    <option value="length">Length</option>
+                    <option value="weight">Weight</option>
+                    <option value="temperature">Temperature</option>
+                    <option value="area">Area</option>
+                    <option value="volume">Volume</option>
+                    <option value="time">Time</option>
+                    <option value="speed">Speed</option>
+                    <option value="pressure">Pressure</option>
+                    <option value="energy">Energy</option>
+                    <option value="data">Data Storage</option>
+                </select>
+            </div>
+            
+            <div class="conversion-box">
+                <div class="input-group">
+                    <input type="number" id="fromValue" placeholder="Enter value">
+                    <select id="fromUnit"></select>
+                </div>
+                
+                <button id="swapBtn" class="swap-btn">
+                    <i class="fas fa-exchange-alt"></i>
+                </button>
+                
+                <div class="input-group">
+                    <input type="number" id="toValue" placeholder="Result" readonly>
+                    <select id="toUnit"></select>
+                </div>
+            </div>
+            
+            <button id="convertBtn" class="convert-btn">Convert</button>
+            
+            <div class="history-container">
+                <h3>Recent Conversions</h3>
+                <ul id="historyList"></ul>
+                <button id="clearHistoryBtn" class="clear-btn">Clear History</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>ToolBox</h2>
+                <p>Your All-in-One Tool App</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="unit-converter.html">Unit Converter</a></li>
+                    <li><a href="todo-list.html">To-Do List</a></li>
+                    <li><a href="doc-converter.html">Document Converter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ToolBox. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/unit-converter.js"></script>
+</body>
+</html>

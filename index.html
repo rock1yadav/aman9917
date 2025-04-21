@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolBox - Your All-in-One Tool App</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>ToolBox</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="unit-converter.html">Unit Converter</a></li>
+                <li><a href="todo-list.html">To-Do List</a></li>
+                <li><a href="doc-converter.html">Document Converter</a></li>
+            </ul>
+            <button id="themeToggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>All Your Tools in One Place</h1>
+                <p>Simplify your workflow with our comprehensive toolbox</p>
+                <div class="cta-buttons">
+                    <a href="#features" class="btn primary">Explore Features</a>
+                    <a href="#" class="btn secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-tools.svg" alt="Tools illustration">
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Our Features</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Unit Converter</h3>
+                    <p>Convert between different units of measurement with ease</p>
+                    <a href="unit-converter.html" class="feature-link">Try Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>To-Do List</h3>
+                    <p>Manage your tasks efficiently and stay organized</p>
+                    <a href="todo-list.html" class="feature-link">Try Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Document Converter</h3>
+                    <p>Convert documents between different formats</p>
+                    <a href="doc-converter.html" class="feature-link">Try Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>ToolBox</h2>
+                <p>Your All-in-One Tool App</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="unit-converter.html">Unit Converter</a></li>
+                    <li><a href="todo-list.html">To-Do List</a></li>
+                    <li><a href="doc-converter.html">Document Converter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ToolBox. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
